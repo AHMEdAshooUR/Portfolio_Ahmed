@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ahmed Ashour Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,11 +14,30 @@
 
 <!-- Navigation dots -->
 <div class="nav-dots">
-    <div class="nav-dot active" data-section="home"></div>
+    <div class="nav-dot" data-section="home"></div>
     <div class="nav-dot" data-section="about"></div>
+    <div class="nav-dot" data-section="bio"></div>
+    <div class="nav-dot" data-section="why-choose-me"></div>
     <div class="nav-dot" data-section="skills"></div>
     <div class="nav-dot" data-section="projects"></div>
+    <div class="nav-dot" data-section="certificates"></div>
     <div class="nav-dot" data-section="contact"></div>
+</div>
+
+
+<!-- Sidebar -->
+<div id="sidebar">
+  <div id="sidebar-toggle">☰</div>
+  <ul id="sidebar-list">
+    <li data-section="home">Home</li>
+    <li data-section="about">About</li>
+    <li data-section="bio">Bio</li>
+    <li data-section="why-choose-me">Why Choose Me?</li>
+    <li data-section="skills">Skills</li>
+    <li data-section="projects">Projects</li>
+    <li data-section="certificates">Certificates</li>
+    <li data-section="contact">Contact</li>
+  </ul>
 </div>
 
 <!-- Header Section -->
@@ -26,18 +46,96 @@
         <img src="image/profile.jpg" alt="Ahmed Ashour" class="profile-pic">
         <div class="profile-info">
             <h1>Ahmed Ashour Ali</h1>
-            <h2>Network Security & Junior Penetration Testing</h2>
-            <a href="Ahmed-Ashour_CV.pdf" target="_blank" class="cv-button">Download CV</a>
+            <h2>Network Security & Junior Penetration Tester</h2>
+            <p class="tagline">Securing the digital world, one test at a time 🚀</p>
+            
+            <a href="Ahmed-Ashour_CV.pdf" target="_blank" class="cv-button">Show CV</a>
         </div>
     </div>
 </header>
 
 <!-- About Section -->
 <section id="about" class="container">
-    <h2 class="section-title">About Me</h2>
-    <p class="about-text">
-        I am a fourth-year IT student at Beni-Suef University of Technology, specializing in Networking & Cybersecurity. I have studied CCNA and MCSA, gaining hands-on experience with Cisco devices, Linux, Firewalls (ASA, Huawei), IDS/IPS (Snort, Cisco), and GNS3 lab simulations. I have completed IoT and Java GUI projects with MySQL integration. I actively practice ethical hacking using TryHackMe, Petestier Lab, and tools like Nmap, Metasploit, Wireshark, Burp Suite, and studied OWASP Top 10 vulnerabilities.
-    </p>
+  <h2 class="section-title">About Me</h2>
+  <p class="about-text">
+    I am <span class="gold">Ahmed Ashour Ali</span>, a fourth-year IT student at 
+    <span class="gold">Beni-Suef University of Technology</span>, specializing in 
+    <span class="gold">Networking & Cybersecurity</span>.  
+    Passionate about <span class="gold">Penetration Testing</span> and 
+    <span class="gold">Network Security</span>, I constantly practice ethical hacking on platforms 
+    like <span class="gold">TryHackMe</span> and apply real-world simulations using 
+    <span class="gold">Cisco devices</span> and <span class="gold">GNS3 labs</span>.
+  </p>
+</section>
+
+<!-- Professional Bio Section -->
+<section id="bio" class="container">
+  <h2 class="section-title">Professional Bio</h2>
+  <p class="about-text">
+    I am a <span class="gold">Network Security Specialist</span> and 
+    <span class="gold">Junior Penetration Tester</span> with strong experience in 
+    ethical hacking, vulnerability analysis, and securing IT infrastructures.  
+    I help organizations identify and fix weaknesses before attackers exploit them.
+  </p>
+
+  <h3 class="category-title">What I Offer</h3>
+  <ul class="bio-list">
+    <li>⚡ Web Application Penetration Testing – OWASP Top 10</li>
+    <li>⚡ Network Penetration Testing – Routers, Switches, Firewalls</li>
+    <li>⚡ Vulnerability Assessment & Reporting</li>
+    <li>⚡ Security Hardening & Red Team Simulations</li>
+  </ul>
+
+</section>
+
+
+<section id="why-choose-me" class="why-section">
+  <h2 class="section-title">Why Choose Me?</h2>
+  <div class="why-grid">
+
+    <div class="why-card" data-animate>
+      <div class="icon">🚀</div>
+      <h3>Passionate</h3>
+      <p>I have a strong passion for Cybersecurity and Penetration Testing, always eager to learn and grow.</p>
+    </div>
+
+    <div class="why-card" data-animate>
+      <div class="icon">🛡</div>
+      <h3>Security Focused</h3>
+      <p>I focus on protecting networks and systems using best practices and professional penetration testing techniques.</p>
+    </div>
+
+    <div class="why-card" data-animate>
+      <div class="icon">🤝</div>
+      <h3>Team Player</h3>
+      <p>I believe in teamwork and collaboration to achieve effective and outstanding results.</p>
+    </div>
+
+    <div class="why-card" data-animate>
+      <div class="icon">📈</div>
+      <h3>Growth Mindset</h3>
+      <p>I’m always open to challenges and new opportunities that drive me to innovate and improve.</p>
+    </div>
+
+    <div class="why-card" data-animate>
+      <div class="icon">⏰</div>
+      <h3>Time Management</h3>
+      <p>I deliver projects on time, meeting deadlines without compromising on quality.</p>
+    </div>
+
+    <div class="why-card" data-animate>
+      <div class="icon">✨</div>
+      <h3>High Quality</h3>
+      <p>I ensure delivering professional work with the highest standards to guarantee client satisfaction.</p>
+    </div>
+
+    <div class="why-card" data-animate>
+      <div class="icon">🔧</div>
+      <h3>After-Service Support</h3>
+      <p>I provide continuous support even after project delivery, including updates, maintenance, and issue fixing to ensure security and stability.</p>
+    </div>
+
+  </div>
 </section>
 
 <!-- Skills Section -->
@@ -127,7 +225,7 @@
         </div>
 
     </div>
-</section>
+
 
 <!-- Projects Section -->
 <section id="projects" class="container">
@@ -245,6 +343,7 @@
 </section>
 
 
+<script src="java.js"></script>
 
 </body>
 </html>
