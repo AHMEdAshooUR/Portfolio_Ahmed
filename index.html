@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahmed Ashour Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init('B3OSKguwm3m9wK01r'); // هنا تحط Public Key من EmailJS
+   })();
+</script>
+
+</head>
+
+<body>
+
+<!-- Floating elements -->
+<div id="floatingElements" class="floating-elements"></div>
+
+<!-- Navigation dots -->
+<div class="nav-dots">
+    <div class="nav-dot" data-section="home"></div>
+    <div class="nav-dot" data-section="about"></div>
+    <div class="nav-dot" data-section="bio"></div>
+    <div class="nav-dot" data-section="why-choose-me"></div>
+    <div class="nav-dot" data-section="skills"></div>
+    <div class="nav-dot" data-section="projects"></div>
+    <div class="nav-dot" data-section="certificates"></div>
+    <div class="nav-dot" data-section="contact"></div>
+</div>
+
+
+<!-- Sidebar -->
+<div id="sidebar">
+  <div id="sidebar-toggle">☰</div>
+  <ul id="sidebar-list">
+    <li data-section="home">Home</li>
+    <li data-section="about">About</li>
+    <li data-section="bio">Bio</li>
+    <li data-section="why-choose-me">Why Choose Me?</li>
+    <li data-section="skills">Skills</li>
+    <li data-section="projects">Projects</li>
+    <li data-section="certificates">Certificates</li>
+    <li data-section="contact">Contact</li>
+  </ul>
+</div>
+
+<!-- Header Section -->
+<header id="home" class="header-section">
+    <div class="profile-container">
+        <img src="image/profile.jpg" alt="Ahmed Ashour" class="profile-pic">
+        <div class="profile-info">
+            <h1>Ahmed Ashour Ali</h1>
+            <h2>Network Security & Junior Penetration Tester</h2>
+            <p class="tagline">Securing the digital world, one test at a time 🚀</p>
+            
+            <a href="Ahmed-Ashour_CV.pdf" target="_blank" class="cv-button">Show CV</a>
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="container">
+  <h2 class="section-title">About Me</h2>
+  <p class="about-text">
+    I am <span class="gold">Ahmed Ashour Ali</span>, a fourth-year IT student at 
+    <span class="gold">Beni-Suef University of Technology</span>, specializing in 
+    <span class="gold">Networking & Cybersecurity</span>.  
+    Passionate about <span class="gold">Penetration Testing</span> and 
+    <span class="gold">Network Security</span>, I constantly practice ethical hacking on platforms 
+    like <span class="gold">TryHackMe</span> and apply real-world simulations using 
+    <span class="gold">Cisco devices</span> and <span class="gold">GNS3 labs</span>.
+  </p>
+</section>
+
+<!-- Professional Bio Section -->
+<section id="bio" class="container">
+  <h2 class="section-title">Professional Bio</h2>
+  <p class="about-text">
+    I am a <span class="gold">Network Security Specialist</span> and 
+    <span class="gold">Junior Penetration Tester</span> with strong experience in 
+    ethical hacking, vulnerability analysis, and securing IT infrastructures.  
+    I help organizations identify and fix weaknesses before attackers exploit them.
+  </p>
+
+  <h3 class="category-title">What I Offer</h3>
+  <ul class="bio-list">
+    <li>⚡ Web Application Penetration Testing – OWASP Top 10</li>
+    <li>⚡ Network Penetration Testing – Routers, Switches, Firewalls</li>
+    <li>⚡ Vulnerability Assessment & Reporting</li>
+    <li>⚡ Security Hardening & Red Team Simulations</li>
+  </ul>
+
+</section>
+
+
+<section id="why-choose-me" class="why-section">
+  <h2 class="section-title">Why Choose Me?</h2>
+  <div class="why-grid">
+
+    <div class="why-card" data-animate>
+      <div class="icon">🚀</div>
+      <h3>Passionate</h3>
+      <p>I have a strong passion for Cybersecurity and Penetration Testing, always eager to learn and grow.</p>
+    </div>
+
+    <div class="why-card" data-animate>
+      <div class="icon">🛡</div>
+      <h3>Security Focused</h3>
+      <p>I focus on protecting networks and systems using best practices and professional penetration testing techniques.</p>
+    </div>
+
+    <div class="why-card" data-animate>
+      <div class="icon">🤝</div>
+      <h3>Team Player</h3>
+      <p>I believe in teamwork and collaboration to achieve effective and outstanding results.</p>
+    </div>
+
+    <div class="why-card" data-animate>
+      <div class="icon">📈</div>
+      <h3>Growth Mindset</h3>
+      <p>I’m always open to challenges and new opportunities that drive me to innovate and improve.</p>
+    </div>
+
+    <div class="why-card" data-animate>
+      <div class="icon">⏰</div>
+      <h3>Time Management</h3>
+      <p>I deliver projects on time, meeting deadlines without compromising on quality.</p>
+    </div>
+
+    <div class="why-card" data-animate>
+      <div class="icon">✨</div>
+      <h3>High Quality</h3>
+      <p>I ensure delivering professional work with the highest standards to guarantee client satisfaction.</p>
+    </div>
+
+    <div class="why-card" data-animate>
+      <div class="icon">🔧</div>
+      <h3>After-Service Support</h3>
+      <p>I provide continuous support even after project delivery, including updates, maintenance, and issue fixing to ensure security and stability.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section container">
+    <h2 class="section-title">Skills & Tools</h2>
+    <div class="skills-categories">
+
+        <!-- Networking & Security -->
+        <div class="skill-category">
+            <h3 class="category-title">Networking & Security</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="image/cisco.jpeg" alt="Cisco" class="skill-image">
+                    <span class="skill-title">Cisco Devices</span>
+                    <span class="skill-desc">Routing & Switching, VLANs, OSPF, HSRP, EtherChannel, NAT/PAT</span>
+                </div>
+                <div class="skill-card">
+                    <img src="image/ciscoDEV.jpeg" alt="Cisco" class="skill-image">
+                    <span class="skill-title">Cisco Training</span>
+                    <span class="skill-desc">Hands-on lab training on real Cisco Routers & Switches</span>
+                </div>
+                <div class="skill-card">
+                    <img src="image/Firewall.jpeg" alt="Firewall" class="skill-image">
+                    <span class="skill-title">Firewalls</span>
+                    <span class="skill-desc">Cisco ASA, Huawei Security Devices</span>
+                </div>
+                <div class="skill-card">
+                    <img src="image/IPS.pbg.webp" alt="IDS/IPS" class="skill-image">
+                    <span class="skill-title">IDS & IPS</span>
+                    <span class="skill-desc">Snort, Cisco IPS/IDS, Threat Detection</span>
+                </div>
+                <div class="skill-card">
+                    <img src="image/GNS3.jpeg" alt="GNS3" class="skill-image">
+                    <span class="skill-title">GNS3</span>
+                    <span class="skill-desc">Network Lab Design & Secure Simulation</span>
+                </div>
+                <div class="skill-card">
+                    <img src="image/SEC_TOLL.jpeg" alt="Tools" class="skill-image">
+                    <span class="skill-title">Security Tools</span>
+                    <span class="skill-desc">Wireshark, Nmap, Metasploit</span>
+                </div>
+                <div class="skill-card">
+                    <img src="image/web_se.jpeg" alt="Web Security" class="skill-image">
+                    <span class="skill-title">Web Security & Penetration</span>
+                    <span class="skill-desc">Burp Suite, OWASP Top 10, Sugar Lab</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Programming & Web -->
+        <div class="skill-category">
+            <h3 class="category-title">Programming & Web</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="image/JAVA_SW.jpeg" alt="Java" class="skill-image">
+                    <span class="skill-title">Java GUI Swing</span>
+                    <span class="skill-desc">Desktop apps with MySQL integration</span>
+                </div>
+                <div class="skill-card">
+                    <img src="image/FrontEND.png" alt="Web Development" class="skill-image">
+                    <span class="skill-title">Web Development</span>
+                    <span class="skill-desc">Front-end projects showcasing university departments</span>
+                </div>
+                <div class="skill-card">
+                    <img src="image/IOT.jpeg" alt="IoT" class="skill-image">
+                    <span class="skill-title">IoT Projects</span>
+                    <span class="skill-desc">Automated car tracking & obstacle avoidance</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Virtualization -->
+        <div class="skill-category">
+            <h3 class="category-title">Virtualization</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="image/Hyper-V.jpeg" alt="Hyper-V" class="skill-image">
+                    <span class="skill-title">Hyper-V</span>
+                    <span class="skill-desc">Virtual Machine Deployment & Management</span>
+                </div>
+                <div class="skill-card">
+                    <img src="image/VMWARE.jpeg" alt="VMware" class="skill-image">
+                    <span class="skill-title">VMware</span>
+                    <span class="skill-desc">VM Setup, Networking & Security Simulation</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- Projects Section -->
+<section id="projects" class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Electronic University Entry Portal</h3>
+            <p>
+                Automated system controlling entry/exit using RFID technology. Improves efficiency, reduces manual checks, enhances security with smart IDs & secret codes.
+            </p>
+            <a href="https://github.com/AHMEdAshooUR/electronic-portal-rfid.git" target="_blank" class="btn-details">Details</a>
+
+        </div>
+
+        <div class="project-card">
+            <h3>Java GUI Swing - Inventory Management</h3>
+            <p>Desktop application using Java Swing and MySQL for managing warehouse inventory efficiently.</p>
+            <a href="https://github.com/AHMEdAshooUR/JavaLibrarySystem.git" target="_blank" class="btn-details">Details</a>
+
+        </div>
+
+        <div class="project-card">
+            <h3>Comprehensive Network Topology</h3>
+            <p>
+                Designed a three-layer network (Core, Distribution, Access) with VLANs, OSPFv3, HSRP, EtherChannel, NAT/PAT, ACLs, and security measures.
+            </p>
+            <a href="https://www.linkedin.com/posts/ahmed-ashour-1923b8274_networking-cisco-cybersecurity-activity-7295521495357779968-ZA99?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEL6lf4B74SROp_Atr-fmrnGfpl0JE_i7-A" target="_blank" class="btn-details">Details</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Advanced Network Security - GNS3</h3>
+            <p>
+                Secured virtual network simulating multi-branch company with GRE/IPsec VPNs, dynamic/static routing, and analysis using Wireshark.
+            </p>
+                <a href="https://www.linkedin.com/posts/ahmed-ashour-1923b8274_networking-cybersecurity-gns3-activity-7289477945549594624-x5G4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEL6lf4B74SROp_Atr-fmrnGfpl0JE_i7-A" target="_blank" class="btn-details">Details</a>
+        </div>
+    </div>
+</section>
+<!-- Certificates Section -->
+<section id="certificates" class="container">
+    <div class="portfolio-card">
+        <h2 class="section-title">Certificates & Training</h2>
+
+        <!-- Completed Certificates -->
+        <h3 class="certificates-subtitle">✅ Completed</h3>
+        <div class="certificates-grid">
+
+            <div class="certificate-card">
+                <img src="image/cisco_CCNA.webp" alt="Cisco Logo" class="certificate-icon">
+                <div>
+                    <h3 class="certificate-title">CCNA 200-301</h3>
+                    <p class="certificate-desc">Self-study with ENG. Abeer Hosny + Training at UICC.</p>
+                </div>
+            </div>
+
+            <div class="certificate-card">
+                <img src="image/MCSA_SC.jpeg" alt="Microsoft Logo" class="certificate-icon">
+                <div>
+                    <h3 class="certificate-title">MCSA</h3>
+                    <p class="certificate-desc">Self-study with ENG. Mohamed Zohdy.</p>
+                </div>
+            </div>
+
+            <div class="certificate-card">
+                <img src="image/AWS_F.jpg" alt="AWS Logo" class="certificate-icon">
+                <div>
+                    <h3 class="certificate-title">AWS Fundamentals</h3>
+                    <p class="certificate-desc">Completed at UICC.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- In Progress Certificates -->
+        <h3 class="certificates-subtitle">🕓 In Progress</h3>
+        <div class="certificates-grid">
+
+            <div class="certificate-card">
+                <img src="image/network_SEC.png" alt="Cisco Logo" class="certificate-icon">
+                <div>
+                    <h3 class="certificate-title">Network Security SD_EVE</h3>
+                    <p class="certificate-desc">NTI – Cisco Network Security Infrastructure (Firewall, VPNs, IDS/IPS, )  .</p>
+                </div>
+            </div>
+
+            <div class="certificate-card">
+                <img src="image/Huawei SEC.png" alt="Huawei Logo" class="certificate-icon">
+                <div>
+                    <h3 class="certificate-title">HCIA-Security</h3>
+                    <p class="certificate-desc">Huawei Security Infrastructure (Firewall, VPN, IDS/IPS).</p>
+                </div>
+            </div>
+
+            <div class="certificate-card">
+                <img src="image/DEPI.png" alt="DEPI Logo" class="certificate-icon">
+                <div>
+                    <h3 class="certificate-title">DEPI Infrastructure & Security</h3>
+                    <p class="certificate-desc">Vulnerability Analysis & Penetration Testing.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container">
+    <h2 class="section-title">Contact</h2>
+
+    <!-- Contact Box Form (First thing in section) -->
+    <div class="contact-box">
+        <h3>Send me a message</h3>
+        <form id="contactForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Write your request..." rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+
+    <ul class="contact-info">
+        <li class="contact-item">LinkedIn: <a href="https://www.linkedin.com/in/ahmed-ashour-1923b8274" target="_blank">Ahmed Ashour</a></li>
+        <li class="contact-item">Email: <a href="mailto:aahme092@gmail.com">aahme092@gmail.com</a></li>
+        <li class="contact-item">GitHub: <a href="https://github.com/AHMEdAshooUR" target="_blank">AHMEdAshooUR</a></li>
+        <li class="contact-item">TryHackMe: <a href="https://tryhackme.com/p/A7Med3hour" target="_blank">Profile</a></li>
+        <li class="contact-item">Fiverr: <a href="https://www.fiverr.com/s/7YB5Z34" target="_blank">My Fiverr</a></li>
+        <li class="contact-item">Upwork: <a href="https://www.upwork.com/freelancers/~01c915b469deeb9ab2?mp_source=share" target="_blank">My Upwork</a></li>
+        <li class="contact-item">Freelancer: <a href="https://www.freelancer.com/u/Ahmed0x2?frm=Ahmed0x2&sb=t" target="_blank">Freelancer</a></li>
+    </ul>
+</section>
+
+
+<script src="java.js"></script>
+
+</body>
+</html>
