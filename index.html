@@ -6,7 +6,17 @@
 <title>Ahmed Ashour Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init('B3OSKguwm3m9wK01r'); // هنا تحط Public Key من EmailJS
+   })();
+</script>
+
 </head>
+
 <body>
 
 <!-- Floating elements -->
@@ -332,6 +342,25 @@
 <!-- Contact Section -->
 <section id="contact" class="container">
     <h2 class="section-title">Contact</h2>
+
+    <!-- Contact Box Form (First thing in section) -->
+    <div class="contact-box">
+        <h3>Send me a message</h3>
+        <form id="contactForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Write your request..." rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+
     <ul class="contact-info">
         <li class="contact-item">LinkedIn: <a href="https://www.linkedin.com/in/ahmed-ashour-1923b8274" target="_blank">Ahmed Ashour</a></li>
         <li class="contact-item">Email: <a href="mailto:aahme092@gmail.com">aahme092@gmail.com</a></li>
@@ -339,6 +368,7 @@
         <li class="contact-item">TryHackMe: <a href="https://tryhackme.com/p/A7Med3hour" target="_blank">Profile</a></li>
         <li class="contact-item">Fiverr: <a href="https://www.fiverr.com/s/7YB5Z34" target="_blank">My Fiverr</a></li>
         <li class="contact-item">Upwork: <a href="https://www.upwork.com/freelancers/~01c915b469deeb9ab2?mp_source=share" target="_blank">My Upwork</a></li>
+        <li class="contact-item">Freelancer: <a href="https://www.freelancer.com/u/Ahmed0x2?frm=Ahmed0x2&sb=t" target="_blank">Freelancer</a></li>
     </ul>
 </section>
 

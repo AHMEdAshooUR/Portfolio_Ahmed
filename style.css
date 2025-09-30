@@ -629,20 +629,24 @@ body {
 .contact-info {
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap; /* يسمح بالانتقال لسطر جديد على الشاشات الصغيرة */
     gap: 15px;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 0;
+    max-width: 600px;
+    margin: 20px auto 0; /* مسافة عن الفورم */
+    padding: 20px;
+    background: rgba(30, 30, 30, 0.85); /* خلفية مميزة */
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6); /* ظل خفيف */
+    border: 1px solid rgba(212, 175, 55, 0.3);
 }
 
 .contact-item {
-    background: rgba(30, 30, 30, 0.9);
-    padding: 14px 22px;
+    padding: 12px 20px;
     border-radius: 30px;
+    background: rgba(25, 25, 25, 0.9);
     border: 1px solid rgba(192, 192, 192, 0.3);
+    font-size: 1.05rem;
     transition: all 0.3s ease;
-    font-size: 1.1rem;
 }
 
 .contact-item a {
@@ -661,6 +665,74 @@ body {
 .contact-item:hover a {
     color: #f5f5f5;
 }
+
+/* Contact Box Form */
+.contact-box {
+    background: rgba(25, 25, 25, 0.95);
+    border-radius: 20px;
+    padding: 35px 30px;
+    max-width: 600px;
+    margin: 0 auto 20px; /* تخفيف المسافة عن contact info */
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+    transition: all 0.3s ease;
+}
+
+.contact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(212, 175, 55, 0.4);
+    border-color: rgba(212, 175, 55, 0.6);
+}
+
+.contact-box h3 {
+    font-size: 1.8rem;
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-box input,
+.contact-box textarea {
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(192,192,192,0.25);
+    background: rgba(40, 40, 40, 0.9);
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-box input:focus,
+.contact-box textarea:focus {
+    border-color: rgba(212, 175, 55, 0.6);
+    outline: none;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
+}
+
+.contact-box button {
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #d4af37, #c0c0c0);
+    color: #0b0b0d;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.contact-box button:hover {
+    background: linear-gradient(45deg, #c0c0c0, #d4af37);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {

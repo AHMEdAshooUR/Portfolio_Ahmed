@@ -110,3 +110,19 @@ sidebarItems.forEach(item => {
     item.addEventListener('mouseenter', () => tooltip.classList.add('show'));
     item.addEventListener('mouseleave', () => tooltip.classList.remove('show'));
 });
+
+
+const contactForm = document.getElementById('contactForm');
+
+contactForm.addEventListener('submit', function(e) {
+    e.preventDefault(); // يمنع الفورم من إعادة تحميل الصفحة
+
+    emailjs.sendForm('Ahmed102030', 'template_xx97iov', this)
+        .then(() => {
+            alert('Message sent successfully!');
+            contactForm.reset(); // يمسح الحقول بعد الإرسال
+        }, (error) => {
+            console.error('FAILED...', error);
+            alert('Failed to send message. Please try again.');
+        });
+});
